@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "Custom font";
+  src: url("../Fonts/Trial_effra/TrialStaticFonts/Effra_Trial_Md.ttf")
+    format(".ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  font-family: "Custom font", sans-serif;
+}
+
+.nav-button {
+  width: 129px;
+  height: 42px;
+  background: none;
+  border-radius: 20px;
+  border: none;
+  opacity: 100%;
+}
+.nav-button:hover {
+  background-color: #ffffff;
+  transition: 0.3s;
+  color: #000000 !important;
+}
+
+.hero-section {
+  /* position: relative; */
+  background-image: url("../Images/BG2.png"), url("../Images/BG1.png");
+  background-size: contain, cover; /* Try contain first to debug */
+  background-repeat: no-repeat;
+  background-position: center, center;
+  background-attachment: fixed;
+  min-height: 900px;
+  width: 100%;
+}
+
+/* .hero-section::before {
+  position: absolute;
+  background-image: url("../Images/Ornament.svg") !important;
+  z-index: 10;
+  background-size: cover;
+} */
+
+.customize-navbar {
+  background-color: #000000 !important;
+  border: none;
+  outline: none;
+}
+
+.hero-content-wrapper {
+  /* max-width: 700px; */
+  height: 337.63px;
+  margin: 0 auto;
+  display: block;
+  background: none;
+  padding-top: 130px;
+}
+
+.hero-content-wrapper h1 {
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 112%;
+  letter-spacing: 0%;
+  color: #ffffff;
+}
+
+.hero-content-wrapper p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #8b8b8b;
+  max-width: 592px;
+  height: 54px;
+  margin: 0 auto;
+}

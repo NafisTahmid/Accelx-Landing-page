@@ -23,8 +23,8 @@ body {
 }
 
 body {
-  background-color: #000000;
-  /* overflow: hidden; */
+  /* background-color: #000000; */
+  overflow-x: hidden;
 }
 
 .nav-button {
@@ -41,6 +41,12 @@ body {
   color: #000000 !important;
 }
 
+.hero-ancestor-section {
+  background: #000000;
+  max-width: 100%;
+  height: auto;
+}
+
 .hero-section {
   position: relative;
   background-size: contain; /* Try contain first to debug */
@@ -54,11 +60,12 @@ body {
   z-index: 9;
 }
 
-.hero-section::before {
+.hero-section::after {
   position: absolute;
   background-size: cover;
   background-position: center;
   z-index: 10;
+  background-color: #000000 !important;
 }
 
 /* .hero-section::before {
@@ -91,7 +98,7 @@ body {
   width: 100%;
   margin: 0 auto;
   display: block;
-  background: #000000;
+  /* background: #000000; */
   padding-top: 130px;
 }
 
@@ -218,7 +225,7 @@ body {
 .open-new-tab-section {
   background: #a8ff35;
   max-width: 100%;
-  height: 742px;
+  height: auto;
 }
 
 .group-15 {
@@ -253,8 +260,6 @@ body {
   position: relative;
   background-color: #f5f5f5;
   max-width: 502px;
-  min-width: 339px;
-  height: 202px;
   min-height: 118px;
   border-radius: 6px;
   margin: 45px auto;
@@ -267,7 +272,6 @@ body {
 .black-background {
   position: absolute;
   max-width: 341.23px;
-  height: 82px;
   min-width: 291px;
   min-height: 69.93px;
   background: #030303;
@@ -365,7 +369,7 @@ body {
 .longtext-section {
   background-color: #ffffff;
   width: 100%;
-  max-height: 584px;
+  height: auto;
 }
 .longtext-section-row {
   max-width: 1440px;
@@ -373,11 +377,13 @@ body {
 
 .longtext-section-row h6 {
   width: 100%;
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: 900;
   line-height: auto;
   letter-spacing: 0%;
+  padding: 8rem 0 0 1rem;
 }
+
 .longtext-section-row h6 span {
   color: #adadad;
 }
@@ -418,21 +424,23 @@ h2.subscription-section-title {
 
 .partner-image-section-box {
   max-width: 266px;
-  height: 120px;
+  /* max-width: 100%; */
+  height: auto;
   background-color: #f5f5f5;
+  margin: 2px auto;
 }
 
 .find-trend-section {
   background-color: #fafafa;
   min-height: 2209px;
-  padding-bottom: ;
 }
 
 .find-trend-section-box {
   max-width: 124px;
-  min-height: 124px;
+  height: auto;
   background-color: #ffffff;
   border-radius: 4px;
+  margin: 0 auto;
 }
 
 .find-trend-section-box img {
@@ -442,15 +450,15 @@ h2.subscription-section-title {
 }
 
 .view-trend-button {
-  max-width: 198px;
-  min-height: 57px;
+  max-width: 208px;
+  min-height: 63px;
   background: #000000;
   border-radius: 15px;
   color: #ffffff;
   background: #000000;
   outline: none;
   border: none;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 900;
   letter-spacing: 0%;
   line-height: 140%;
@@ -464,6 +472,83 @@ h2.subscription-section-title {
 }
 
 @media (max-width: 550px) {
+  .hero-content-wrapper-button-section button {
+    max-width: 159px !important;
+    min-height: 44px;
+    /* width: 54%; */
+    font-size: 14px;
+    margin-top: -2px !important;
+    padding-bottom: 37px;
+  }
+
+  .btn-hero-socmed-1 {
+    position: absolute;
+    height: 82px;
+    max-width: 341.23px;
+    background-color: #181818;
+    box-shadow: 0 5px -2px 0px #181818;
+    transform: rotate(-3deg);
+    z-index: 10;
+    border: 1px solid #000000;
+    left: -25px !important;
+    top: -5px;
+  }
+
+  .btn-hero-socmed-2 {
+    top: 60px;
+    border: 1px solid #181818;
+    left: -25px !important;
+    position: absolute;
+    height: 82px;
+    max-width: 341.23px;
+    background-color: #181818;
+    box-shadow: 0 5px -2px 0px #181818;
+    transform: rotate(3deg);
+    z-index: 9;
+    border: 1px solid #000000;
+  }
+
+  .btn-hero-socmed-3 {
+    top: -10px;
+    border: 1px solid #181818;
+    left: -25px !important;
+    position: absolute;
+    height: 82px;
+    max-width: 341.23px;
+    background-color: #181818;
+    box-shadow: 0 5px -2px 0px #181818;
+    transform: rotate(-2deg);
+    z-index: 8;
+    border: 1px solid #000000;
+  }
+
+  .btn-hero-socmed-4 {
+    left: -25px !important;
+    top: 55px;
+    border: 1px solid #181818;
+    position: absolute;
+    height: 82px;
+    max-width: 341.23px;
+    background-color: #181818;
+    box-shadow: 0 5px -2px 0px #181818;
+    transform: rotate(4deg);
+    z-index: 7;
+    border: 1px solid #000000;
+  }
+
+  .white-background {
+    position: relative;
+    background-color: #f5f5f5;
+    max-width: 502px;
+    min-height: 118px !important;
+    border-radius: 6px;
+    margin: 45px auto;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%) scale(1);
+  }
+
   .open-new-tab-section h2 {
     font-size: 24px;
     font-weight: 900;
@@ -472,20 +557,22 @@ h2.subscription-section-title {
     text-align: center;
   }
 
-  .white-background {
-    transform: translate(-21%, -31%) scale(1);
-  }
-
   .black-background {
     top: 35%;
     left: 20%;
     transform: translate(-12%, -20%) !important;
+    max-width: 291px;
   }
+
+  .black-background-text-section p {
+    font-size: 20.3px;
+  }
+
   .group-text-one img {
     position: absolute;
-    top: -217px;
-    left: 11%;
-    transform: rotate(-18deg);
+    top: -206px;
+    left: 7%;
+    transform: rotate(-25deg);
     z-index: 10;
   }
 
@@ -493,30 +580,27 @@ h2.subscription-section-title {
     position: absolute;
     font-family: "Good-dog new", sans-serif !important;
     font-size: 14px;
-    font-weight: 400;
-    color: #000000;
-    letter-spacing: 0%;
-    max-width: 83px;
-    left: 23%;
-    text-align: center;
-    top: -212px !important;
-    transform: rotate(4deg);
+
+    left: -3%;
+
+    top: -175px !important;
   }
 
   .group-text-two img {
     position: absolute;
-    right: 9%;
-    top: -344px;
+    right: 13%;
+    top: -335px;
     /* transform: rotate(4deg) !important; */
     transform: scaleY(-1) rotate(50deg);
     z-index: 1000000;
   }
 
   .group-text-two p {
+    width: 19%;
     font-family: "Good-dog new", sans-serif;
     position: absolute;
-    right: 18%;
-    top: -289px;
+    right: 3%;
+    top: -376px;
     transform: rotate(4deg);
   }
 
@@ -572,10 +656,25 @@ h2.subscription-section-title {
     padding-top: 77px;
   }
 
-  .white-background {
-    max-width: 502px;
-    min-width: 339px;
-    max-height: 202px;
-    min-height: 118px;
+  .longtext-section-row h6 {
+    width: 100%;
+    font-size: 2.25rem;
+    font-weight: 900;
+    line-height: auto;
+    letter-spacing: 0%;
+    padding-left: 1rem;
+    padding-top: 4rem;
+  }
+
+  .partner-section h2,
+  .find-trend-section h2,
+  h2.subscription-section-title {
+    font-size: 2.25rem;
+  }
+
+  .view-trend-button {
+    max-width: 162px;
+    min-height: 44px;
+    font-size: 14px;
   }
 }

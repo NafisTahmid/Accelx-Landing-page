@@ -3,56 +3,81 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Findtrend</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- CUSTOM (CSS) -->
      <link rel="stylesheet" href="./CSS/style.css">
+     <!-- GOOGLE FONT (ROBOTO) -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg customize-navbar">
-        <div class="container">
-          <a class="navbar-brand fw-bold text-light" href="#"><img src="./Images/logo.png" alt="logo" class="img-fluid"> Findtrend</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll ms-auto" style="--bs-scroll-height: 100px;">
-              <li class="nav-item text-center">
-                <a class="nav-link text-light p-4" href="#">About</a>
-              </li>
-              <li class="nav-item text-center">
-                <a class="nav-link text-light p-4" href="#">How it work</a>
-              </li>
-              <li class="nav-item text-center">
-                <a class="nav-link text-light p-4" href="#">Pricing</a>
-              </li>
-              <li class="nav-item text-center">
-                <a class="nav-link text-light p-4">Solution</a>
-              </li>
-              <li class="nav-item text-center">
-                <a class="nav-link text-light p-4">Features</a>
-              </li>
-              
-            </ul>
-            <!-- <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form> -->
-            <div class="row justify-content-center align-items-center">
-              <div class="col-md-6">
-                <button class="nav-button text-light mx-auto d-block">Login</button>
-              </div>
-              <div class="col-md-6">
-                <button class=" nav-button text-light mx-auto d-block">Register</button>
-              </div>
-            </div>
-          </div>
-        </div>
-    </nav>
+      <style>
+        /* Progress Bar Styles */
+        .progress-container {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: #e0e0e0;
+        }
 
+        .progress-bar {
+            width: 0%;
+            height: 100%;
+            background: red;
+            transition: width 0.2s ease-in-out;
+        }
+    </style>
+  <body>
+    
+      <!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg customize-navbar sticky-top">
+  <div class="container">
+      <a class="navbar-brand fw-bold text-light" href="#">
+          <img src="./Images/logo.png" alt="logo" class="img-fluid"> Findtrend
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav my-3 my-lg-0 navbar-nav-scroll ms-auto me-auto ps-5" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                  <a class="nav-link text-light text-center px-4 d-block" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link text-light text-center px-4 d-block" href="#">How it work</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link text-light text-center px-4 d-block" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link text-light text-center px-4 d-block">Solution</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link text-light text-center px-4 d-block">Features</a>
+              </li>
+          </ul>
+          <div class="row justify-content-center align-items-center">
+              <div class="col-md-6">
+                  <button class="nav-button text-light mx-auto d-block">Login</button>
+              </div>
+              <div class="col-md-6">
+                  <button class="nav-button text-light mx-auto d-block">Register</button>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Progress Bar Container -->
+  <div class="progress-container">
+      <div class="progress-bar" id="progressBar"></div>
+  </div>
+</nav>
     <!-- Hero section -->
      <section class="hero-section">
+        
         <div class="container">
             <div class="hero-content-wrapper">
               <div class="row">
@@ -69,12 +94,306 @@
                   </div>
               </div>
             </div>
-            <div class="btn-hero-section">
-
+            <div class="btn-hero-socmed row justify-content-center align-items-center my-5 ms-5 d-block">
+                <div class="btn-hero-socmed-1 col-md- col-sm-12">
+                  <div class="d-flex justify-content-center align-items-center">
+                    <img src="./Images/image 96.png"  class="img-fluid d-block  mb-3" alt="twitter logo">
+                    <p class="text-center py-4 fs-6 ms-1">Cryptopunk - Search &#10006;</p>
+                  </div>
+                </div>
+                <div class="btn-hero-socmed-2 col-md-3 col-sm-12">
+                  <div class="d-flex justify-content-center align-items-center">
+                    <img src="./Images/image 96.svg" class="img-fluid d-block  mb-3" alt="">
+                    <p class="text-center py-4 fs-6 ms-1">Popular Design - Search &#10006;</p>
+                  </div>
+                </div>
+                <div class="btn-hero-socmed-3 col-md-3 col-sm-12">
+                  <div class="d-flex justify-content-center align-items-center">
+                      <img src="./Images/image 95.svg"  class="img-fluid d-block  mb-3" alt="facebook image">
+                      <p class="text-center py-4 fs-6 ms-1">Product Design - Search &#10006;</p>
+                  </div>
+                </div>
+                <div class="btn-hero-socmed-4 col-md- col-sm-12">
+                  <div class="d-flex justify-content-center align-items-center">
+                      <img src="./Images/Rectangle 6.svg" class="img-fluid d-block  mb-3" alt="basketball">
+                      <p class="text-center py-4 fs-6 ms-1">Elon Musk - Search &#10006;</p>
+                  </div>
+                </div>
             </div>
+         
         </div>
      </section>
 
+     <!-- Open new tab section -->
+      <section class="open-new-tab-section">
+          <div class="container">
+            <h2 class="text-center">Open new tabs is sh*t</h2>
+            <div class="row">
+              <div class="col-md-12 justify-content-center align-items-center">
+                <div class="group-15">
+                  <div class="white-background">
+                    <div class="black-background">
+                      <div class="black-background-text-section d-flex justify-content-center align-items-center">
+                        <img src="./Images/Group 16.svg" class="img-fluid" alt="">
+                        <p>Findtrend - Elon Musk</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="open-new-tab-section-footer-text-section">
+                    <p>A solution for your browser and don't make your device get slower over time. Get ease and faster to discover a trend with just one tab.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="group-text-one">
+                <img src="./Images/Arrow 03.png" alt="" class="arrow img-fluid">
+                <p>solution for discover a trend</p>
+            </div>
+            <div class="group-text-two">
+              <p>You just need one tab now</p>
+              <img src="./Images/Arrow 4.png" class="arrow-two img-fluid" alt="">
+            </div>
+          </div>
+      </section>
+
+    <!-- Longtext section -->
+     <section class="longtext-section">
+        <div class="container">
+          <div class="row longtext-section-row">
+            <div style="padding:160px 0" class="col-md-12 justify-content-center align-items-center">
+             <h6>Findtrend helps you to increase your
+              productivity and reduce your computer's
+              memory load, <span>an application that can
+                fulfill your daily browsing needs.</span></h6>
+            </div>
+          </div>
+         
+        </div>
+     </section>
+
+   <!-- Partner section -->
+    <section class="partner-section ">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="text-center">Findtrend make +1000 Startup grow</h2>
+            </div>
+          </div>
+          <div class="row partner-image-section py-3">
+
+            <div class="col-md- col-sm-6 col-lg-3">
+              <div class="partner-image-section-box">
+                <img src="./Images/image 116.png"class="img-fluid mx-auto d-block p-5"  alt="">
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-lg-3">
+              <div class="partner-image-section-box">
+                <img src="./Images/image 128.png"class="img-fluid mx-auto d-block p-5" alt="">
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-lg-3">
+              <div class="partner-image-section-box">
+                <img src="./Images/image 121.png"class="img-fluid mx-auto d-block p-5"  alt="">
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-lg-3">
+              <div class="partner-image-section-box">
+                <img src="./Images/image 119.png"class="img-fluid mx-auto d-block p-5"  alt="">
+              </div>
+            </div>   
+
+          </div>
+
+          <div class="row partner-image-section py-3">
+
+            <div class="col-md- col-sm-6 col-lg-3">
+              <div class="partner-image-section-box">
+                <img src="./Images/image 125.png"class="img-fluid mx-auto d-block p-5"  alt="">
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-lg-3">
+              <div class="partner-image-section-box">
+                <img src="./Images/image 122.png"class="img-fluid mx-auto d-block p-5" alt="">
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-lg-3">
+              <div class="partner-image-section-box">
+                <img src="./Images/image 133.png"class="img-fluid mx-auto d-block p-5"  alt="">
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-lg-3">
+              <div class="partner-image-section-box">
+                <img src="./Images/image 129.png"class="img-fluid mx-auto d-block p-5"  alt="">
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="row partner-image-section py-3">
+
+            <div class="col-md- col-sm-6 col-lg-3">
+              <div class="partner-image-section-box">
+                <img src="./Images/image 117.png"class="img-fluid mx-auto d-block p-5"  alt="">
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-lg-3">
+              <div class="partner-image-section-box">
+                <img src="./Images/image 126.png"class="img-fluid mx-auto d-block p-5" alt="">
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-lg-3">
+              <div class="partner-image-section-box">
+                <img src="./Images/image 120.png"class="img-fluid mx-auto d-block p-5"  alt="">
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-lg-3">
+              <div class="partner-image-section-box">
+                <img src="./Images/image 124.png"class="img-fluid mx-auto d-block p-5"  alt="">
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="row partner-image-section py-3">
+
+            <div class="col-md- col-sm-6 col-lg-3">
+              <div class="partner-image-section-box">
+                <img src="./Images/image 132.png"class="img-fluid mx-auto d-block p-5"  alt="">
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-lg-3">
+              <div class="partner-image-section-box">
+                <img src="./Images/image 127.png"class="img-fluid mx-auto d-block p-5" alt="">
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-lg-3">
+              <div class="partner-image-section-box">
+                <img src="./Images/image 118.png"class="img-fluid mx-auto d-block p-5"  alt="">
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-lg-3">
+              <div class="partner-image-section-box">
+                <img src="./Images/image 130.png"class="img-fluid mx-auto d-block p-5"  alt="">
+              </div>
+            </div>
+            
+          </div>
+        </div>
+    </section>
+
+    <!-- Find trend section -->
+    <section class="find-trend-section">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                <h2 class="text-center">All platform connect to Findtrend</h2>
+              </div>
+          </div>
+          <div class="row justify-content-center align-items-center">
+            <div class="col-md-2 justify-content-center align-items-center">
+              <div class="find-trend-section-box my-2">
+                <img src="./Images/findtrend-facebook.png" class="mx-auto d-block img-fluid" alt="">
+              </div>
+            </div>
+            <div class="col-md-2 justify-content-center align-items-center">
+              <div class="find-trend-section-box my-2">
+                <img src="./Images/findtrend-twitter.png" class="mx-auto d-block img-fluid" alt="">
+              </div>
+            </div>
+            <div class="col-md-2 justify-content-center align-items-center">
+              <div class="find-trend-section-box my-2">
+                <img src="./Images/findtrend-basketball.png" class="mx-auto d-block img-fluid" alt="">
+              </div>
+            </div>
+            <div class="col-md-2 justify-content-center align-items-center">
+              <div class="find-trend-section-box my-2">
+                <img src="./Images/findtrend-pinterest.png" class="mx-auto d-block img-fluid" alt="">
+              </div>
+            </div>
+            <div class="col-md-2 justify-content-center align-items-center">
+              <div class="find-trend-section-box my-2">
+                <img src="./Images/findtrend-M.png" class="mx-auto d-block img-fluid" alt="">
+              </div>
+            </div>
+            <div class="col-md-2 justify-content-center align-items-center">
+              <div class="find-trend-section-box my-2">
+                <img src="./Images/findtrend-reddit.png" class="mx-auto d-block img-fluid" alt="">
+              </div>
+            </div>
+            <div class="col-md-2 justify-content-center align-items-center">
+              <div class="find-trend-section-box my-2">
+                <img src="./Images/findtrend-vk.png" class="mx-auto d-block img-fluid" alt="">
+              </div>
+            </div>
+            <div class="col-md-2 justify-content-center align-items-center">
+              <div class="find-trend-section-box my-2">
+                <img src="./Images/findtrend-linkedin.png" class="mx-auto d-block img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="tweet-section">
+            <div class="row">
+              <div class="col-md-12">
+                <img src="./Images/tweet 1.png" class="img-fluid mx-auto d-block py-4" alt="tweet 1">
+              </div>
+              <div class="col-md-12">
+                <img src="./Images/tweet 2.png" class="img-fluid mx-auto d-block py-4" alt="tweet 2">
+              </div>
+              <div class="col-md-12">
+                <img src="./Images/tweet 3.png" class="img-fluid mx-auto d-block py-4" alt="tweet 3">
+              </div>
+            </div>
+          </div>
+
+          <!-- View more trend button -->
+           <button class="mx-auto d-block view-trend-button py-2 px-3">View More Trend</button>
+      </div>
+    </section>
+
+    <!-- Subscription section -->
+     <!-- <section class="subscription-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="subscription-section-title text-align-center">Get your best deal</h2>
+              <div class="toggle-button-section">
+                <div class="d-flex justify-content-center align-items-center">
+                  <div class="monthly"></div>
+                  <div class=""></div>
+                  <div class=""></div>
+                  <div class=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+     </section> -->
+    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- JavaScript for Scroll Progress -->
+    <script>
+      function updateProgressBar() {
+          const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+          const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          const scrollPercent = (scrollTop / scrollHeight) * 100;
+          
+          document.getElementById("progressBar").style.width = scrollPercent + "%";
+      }
+
+      window.addEventListener("scroll", updateProgressBar);
+    </script>
   </body>
 </html>

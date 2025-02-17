@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Findtrend</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <!-- Owl Carousel 2 CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+
     <!-- CUSTOM (CSS) -->
      <link rel="stylesheet" href="./CSS/style.css">
      <!-- GOOGLE FONT (ROBOTO) -->
@@ -31,50 +36,93 @@
         }
     </style>
   <body>
+    <!-- Custom Navbar -->
+     <div class="custom-navbar">
+      <div class="container">
+        <div class="row justify-content-around align-items-center">
+          
+          <div class="custom-navbar-logo col-md-2">
+            <a class="fw-bold text-light text-decoration-none hide-on-mobile" href="#">
+              <img src="./Images/logo.png" alt="logo" class="img-fluid"> Findtrend
+            </a>
+          </div>
+
+          
+
+          <div class="custom-navbar-points col-md-6">
+            <ul class="">
+              <li ><a href="#" class="text-center hide-on-mobile">About</a></li>
+              <li><a href="#" class="text-center hide-on-mobile">How it works</a></li>
+              <li><a href="#" class="text-center hide-on-mobile">Pricing</a></li>
+              <li><a href="#" class="text-center hide-on-mobile">Solution</a></li>
+              <li><a href="#" class="text-center hide-on-mobile">Features</a></li>
+              <li href="" id="sidebar-menu" class="ms-auto" onclick="openSidebar(event)"><img src="./Images/svg-menu.svg" alt=""></li>
+            </ul>
+          </div>
+          <div class="custom-navbar-buttons col-md-4 pb-2 ms-auto">
+            <button class="hide-on-mobile">Log in</button>
+            <button class="hide-on-mobile">Register</button>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <nav>
+      <ul class="sidebar">
+        <li href="" onclick=closeSidebar()><img src="./Images/svg-cross.svg" class="img-fluid d-block ps-3 pt-3" alt=""></li>
+        <li ><a href="#" class="text-center">About</a></li>
+        <li><a href="#" class="text-center">How it works</a></li>
+        <li><a href="#" class="text-center">Pricing</a></li>
+        <li><a href="#" class="text-center">Solution</a></li>
+        <li><a href="#" class="text-center">Features</a></li>
+      </ul>
+    </nav>
+   
     
       <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg customize-navbar sticky-top">
-  <div class="container">
-      <a class="navbar-brand fw-bold text-light" href="#">
-          <img src="./Images/logo.png" alt="logo" class="img-fluid"> Findtrend
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul class="navbar-nav my-3 my-lg-0 navbar-nav-scroll ms-auto me-auto ps-5" style="--bs-scroll-height: 100px;">
-              <li class="nav-item">
-                  <a class="nav-link text-light text-center px-4 d-block" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link text-light text-center px-4 d-block" href="#">How it work</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link text-light text-center px-4 d-block" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link text-light text-center px-4 d-block">Solution</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link text-light text-center px-4 d-block">Features</a>
-              </li>
-          </ul>
-          <div class="row justify-content-center align-items-center">
-              <div class="col-md-6">
-                  <button class="nav-button text-light mx-auto d-block">Login</button>
-              </div>
-              <div class="col-md-6">
-                  <button class="nav-button text-light mx-auto d-block">Register</button>
+    <!-- <nav class="navbar navbar-expand-lg customize-navbar sticky-top">
+      <div class="container">
+          <a class="navbar-brand fw-bold text-light" href="#">
+              <img src="./Images/logo.png" alt="logo" class="img-fluid"> Findtrend
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+              aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+              <ul class="navbar-nav my-3 my-lg-0 navbar-nav-scroll ms-auto me-auto ps-5" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                      <a class="nav-link text-light text-center px-4 d-block" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-light text-center px-4 d-block" href="#">How it work</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-light text-center px-4 d-block" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-light text-center px-4 d-block">Solution</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-light text-center px-4 d-block">Features</a>
+                  </li>
+              </ul>
+              <div class="row justify-content-center align-items-center">
+                  <div class="col-md-6">
+                      <button class="nav-button text-light mx-auto d-block">Login</button>
+                  </div>
+                  <div class="col-md-6">
+                      <button class="nav-button text-light mx-auto d-block">Register</button>
+                  </div>
               </div>
           </div>
       </div>
-  </div>
-  <!-- Progress Bar Container -->
-  <div class="progress-container">
-      <div class="progress-bar" id="progressBar"></div>
-  </div>
-</nav>
+    
+      <div class="progress-container">
+          <div class="progress-bar" id="progressBar"></div>
+      </div>
+    </nav> -->
+    
     <!-- Hero section -->
      <div class="hero-ancestor-section">
 
@@ -303,7 +351,7 @@
                 <h2 class="text-center">All platform connect to Findtrend</h2>
               </div>
           </div>
-          <div class="row justify-content-center align-items-center">
+          <!-- <div class="row justify-content-center align-items-center">
             <div class="col-md-2 justify-content-center align-items-center">
               <div class="find-trend-section-box my-2">
                 <img src="./Images/findtrend-facebook.png" class="mx-auto d-block img-fluid" alt="">
@@ -344,6 +392,32 @@
                 <img src="./Images/findtrend-linkedin.png" class="mx-auto d-block img-fluid" alt="">
               </div>
             </div>
+          </div> -->
+          <div class="owl-carousel owl-theme">
+            <div class="find-trend-section-box my-2">
+              <img src="./Images/findtrend-facebook.png" class="mx-auto d-block img-fluid" alt="">
+            </div>
+            <div class="find-trend-section-box my-2">
+              <img src="./Images/findtrend-twitter.png" class="mx-auto d-block img-fluid" alt="">
+            </div>
+            <div class="find-trend-section-box my-2">
+              <img src="./Images/findtrend-basketball.png" class="mx-auto d-block img-fluid" alt="">
+            </div>
+            <div class="find-trend-section-box my-2">
+              <img src="./Images/findtrend-pinterest.png" class="mx-auto d-block img-fluid" alt="">
+            </div>
+            <div class="find-trend-section-box my-2">
+              <img src="./Images/findtrend-M.png" class="mx-auto d-block img-fluid" alt="">
+            </div>
+            <div class="find-trend-section-box my-2">
+              <img src="./Images/findtrend-reddit.png" class="mx-auto d-block img-fluid" alt="">
+            </div>
+            <div class="find-trend-section-box my-2">
+              <img src="./Images/findtrend-vk.png" class="mx-auto d-block img-fluid" alt="">
+            </div>
+            <div class="find-trend-section-box my-2">
+              <img src="./Images/findtrend-linkedin.png" class="mx-auto d-block img-fluid" alt="">
+            </div>
           </div>
 
           <div class="tweet-section">
@@ -360,10 +434,12 @@
             </div>
           </div>
 
-          <!-- View more trend button -->
            <button class="mx-auto d-block view-trend-button py-2 px-3">View More Trend</button>
       </div>
     </section>
+
+   
+    
 
     <!-- Subscription section -->
      <!-- <section class="subscription-section">
@@ -386,7 +462,12 @@
      </section> -->
     
 
+      <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Bootstrap (js) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Owl carousel min js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- JavaScript for Scroll Progress -->
     <script>
       function updateProgressBar() {
@@ -398,6 +479,43 @@
       }
 
       window.addEventListener("scroll", updateProgressBar);
+
+      // Owl carousel
+      $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+          items: 8, // Number of visible items
+          loop: true, // Infinite looping
+          margin: 10, // Space between items
+          autoplay: true, // Auto slide
+          autoplayTimeout: 3000, // Time between slides
+          nav: false,
+          dots:false,
+          responsive:{
+            0:{
+                items:2,
+                nav: false,
+                dots: false
+            },
+            600:{
+                items:4
+            },
+            1000:{
+                items:8
+            }
+        }
+        });
+      });
+
+      function openSidebar() {
+        const menubar = document.querySelector(".sidebar");
+        menubar.style.display = "flex";
+        e.preventDefault();
+      }
+
+      function closeSidebar() {
+        const menubar = document.querySelector(".sidebar");
+        menubar.style.display = "none";
+      }
     </script>
   </body>
 </html>

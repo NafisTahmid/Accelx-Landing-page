@@ -200,6 +200,14 @@ nav a {
   z-index: 9999;
 }
 
+.custom-navbar-buttons button a {
+  color: #ffffff;
+}
+
+.custom-navbar-buttons button:hover a {
+  color: #000000;
+}
+
 .hero-content-wrapper {
   width: 100%;
   margin: 0 auto;

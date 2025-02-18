@@ -444,7 +444,7 @@ nav a {
 .open-new-tab-section {
   background: #a8ff35;
   max-width: 100%;
-  height: auto;
+  min-height: 68.7vh;
 }
 
 .group-15 {
@@ -498,7 +498,7 @@ nav a {
   border-radius: 5px;
   z-index: 2;
   top: 35%;
-  left: 20%;
+  left: 22%;
   transform: translate(-5%, -20%);
   padding: 35px 0;
 }
@@ -583,6 +583,10 @@ nav a {
   letter-spacing: 0%;
   text-align: center;
   color: #000000;
+  padding-bottom: 4.375rem;
+  width: 50%;
+  /* text-align: center; */
+  margin: 0 auto;
 }
 
 .longtext-section {
@@ -616,7 +620,8 @@ nav a {
 
 .partner-section h2,
 .find-trend-section h2,
-h2.subscription-section-title {
+h2.subscription-section-title,
+h2.best-deal-header-text {
   font-size: 64px;
   font-weight: 900;
   line-height: auto;
@@ -637,7 +642,12 @@ h2.subscription-section-title {
   padding-left: 561px;
 }
 
-.find-trend-section h2 {
+h2.best-deal-header-text {
+  color: #ffffff;
+}
+
+.find-trend-section h2,
+h2.best-deal-header-text {
   padding-top: 115px;
 }
 
@@ -651,7 +661,7 @@ h2.subscription-section-title {
 
 .find-trend-section {
   background-color: #fafafa;
-  height: auto;
+  min-height: 204.54vh;
 }
 
 .find-trend-section-box {
@@ -687,6 +697,7 @@ h2.subscription-section-title {
   letter-spacing: 0%;
   line-height: 140%;
   border-radius: 30px;
+  margin: 5rem 0;
 }
 
 .subscription-section {
@@ -697,6 +708,192 @@ h2.subscription-section-title {
 
 #sidebar-menu {
   display: none;
+}
+
+.best-deal-section {
+  max-width: 100%;
+  min-height: 1128px;
+  background-color: #000000;
+}
+
+.deal-sub-text {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: auto;
+  letter-spacing: 0%;
+  color: #f5f5f5;
+  transition: color 0.3s ease-in, transform 0.3s ease-in;
+}
+
+.deal-sub-text-1 {
+  padding-left: 5px;
+}
+
+.deal-sub-text:hover {
+  color: #ffffff;
+}
+
+.toggle-button {
+  position: relative;
+  width: 104px;
+  min-height: 52px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  z-index: 9;
+  margin: 0 20px;
+  display: block;
+}
+
+.toggle-button-recursive {
+  position: absolute;
+  width: 36px;
+  min-height: 36px;
+  border-radius: 50%;
+  background-color: #a8ff35;
+  top: 15%;
+  left: 5%;
+  z-index: 10;
+}
+
+.last-arrow-section {
+  position: absolute;
+  color: #ffffff;
+  right: 37%;
+  transform: rotate(9deg);
+  width: 4%;
+  text-align: center;
+  font-family: "Good-dog new", sans-serif;
+}
+
+.last-arrow-section::after {
+  content: url("../Images/last-arrow.png");
+}
+
+.payment-box-div {
+  margin: 0 auto;
+}
+
+.payment-box {
+  position: relative;
+  width: 360px;
+  height: 640px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  margin: 15px auto;
+}
+
+.payment-box:hover {
+  background-color: #a8ff35;
+  transition: background-color 0.3s ease-in, transform 0.3s ease-in;
+}
+
+.payment-box:hover button {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+h6.payment-box-heading {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+}
+
+p.payment-box-sub-text {
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+h6.price-text {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+}
+
+.price-text small {
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+}
+
+.payment-box ul li {
+  list-style: none;
+  font-size: 18px;
+  letter-spacing: 100%;
+  line-height: 0%;
+  color: #000000;
+}
+
+.payment-box ul li::before {
+  content: "\2713";
+  font-weight: 900;
+  padding-right: 10px;
+}
+
+button.payment-box-button {
+  width: 296px;
+  height: 58px;
+  border-radius: 29px;
+  background-color: #a8ff35;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 140%;
+  letter-spacing: 0%;
+  transition: background-color 0.3s ease-in, transition 0.3s ease-in;
+  position: absolute;
+  bottom: 20px; /* Ensures uniform positioning */
+  left: 9%;
+}
+
+.payment-box-div {
+  margin: 50px auto;
+}
+
+.join-us-section {
+  position: relative;
+  width: 100%;
+  min-height: 539px;
+  background-color: #a8ff35;
+}
+
+.join-us-texts {
+  position: absolute;
+  top: 35%;
+}
+
+section.join-us-section h3 {
+  font-size: 72px;
+  line-height: 112%;
+  letter-spacing: 0%;
+  font-weight: 900;
+  text-align: center;
+}
+
+section.join-us-section h3 span {
+  color: #87d322;
+}
+
+section.join-us-section button {
+  width: 180px;
+  min-height: 57px;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  background: #000000;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 114%;
+  letter-spacing: 0%;
 }
 
 @media (max-width: 800px) {
@@ -711,6 +908,7 @@ h2.subscription-section-title {
     height: 90px;
   }
 }
+
 @media (max-width: 550px) {
   .hero-content-wrapper-button-section button {
     max-width: 159px !important;
@@ -919,5 +1117,31 @@ h2.subscription-section-title {
   }
   .hero-content-wrapper {
     padding-top: 55px;
+  }
+
+  .last-arrow-section {
+    position: absolute;
+    color: #ffffff;
+    right: 23%;
+    transform: rotate(5deg);
+    width: 13%;
+    text-align: center;
+    font-family: "Good-dog new", sans-serif;
+    top: 752% !important;
+  }
+
+  .last-arrow-section::after {
+    content: none;
+  }
+  .last-arrow-section::before {
+    content: url("../Images/last-arrow-reverse.png");
+  }
+
+  h2.best-deal-header-text {
+    font-size: 34px;
+  }
+
+  section.join-us-section h3 {
+    font-size: 30px;
   }
 }

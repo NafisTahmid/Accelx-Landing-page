@@ -678,7 +678,7 @@ h2.best-deal-header-text {
 
 .find-trend-section {
   background-color: #fafafa;
-  min-height: 204.54vh;
+  height: auto;
 }
 
 .find-trend-section-box {
@@ -772,6 +772,19 @@ h2.best-deal-header-text {
   top: 15%;
   left: 5%;
   z-index: 10;
+  display: block;
+}
+
+.toggle-button-recursive-two {
+  position: absolute;
+  width: 36px;
+  min-height: 36px;
+  border-radius: 50%;
+  background-color: #a8ff35;
+  top: 15%;
+  right: 5%;
+  z-index: 10;
+  display: none;
 }
 
 .last-arrow-section {
@@ -1175,7 +1188,7 @@ footer ul li a {
   .last-arrow-section {
     position: absolute;
     color: #ffffff;
-    right: 23%;
+    right: 22%;
     transform: rotate(5deg);
     width: 13%;
     text-align: center;
@@ -1240,7 +1253,7 @@ footer ul li a {
     background: #ffffff;
   }
 
-  .sidebar button:hover ul.sidebar li a {
+  .sidebar:hover li a {
     color: #000000;
   }
 

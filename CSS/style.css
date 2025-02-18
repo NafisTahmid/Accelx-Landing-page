@@ -46,7 +46,7 @@ nav {
 }
 
 nav ul.sidebar {
-  height: 50vh;
+  height: 86vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -1221,5 +1221,30 @@ footer ul li a {
     text-decoration: none;
     font-size: 18px;
     padding: 12px auto;
+  }
+
+  .sidebar button {
+    max-width: 129px;
+    min-height: 42px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #ffffff;
+    background: #000000;
+    transition: transform 0.3s ease-in;
+  }
+  .sidebar button:hover {
+    background: #ffffff;
+  }
+
+  .sidebar button:hover ul.sidebar li a {
+    color: #000000;
+  }
+
+  ul.sidebar li {
+    margin: 10px auto;
   }
 }

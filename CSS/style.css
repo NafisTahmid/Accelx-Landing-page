@@ -1212,5 +1212,6 @@ footer ul li a {
     text-align: center;
     text-decoration: none;
     font-size: 18px;
+    padding: 12px auto;
   }
 }

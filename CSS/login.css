@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "Custom font";
+  src: url("../Fonts/Trial_effra/TrialStaticFonts/Effra_Trial_Md.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Good-dog new";
+  src: url("../Fonts/GOODDP__.TTF") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Custom font", sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.outer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  overflow: hidden;
+}
+.forms-container {
+  /* width: 90%; */
+  min-width: 600px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.signin-signup {
+  /* height: 300px;
+  width: 300px; */
+  max-width: 400px;
+  margin: auto;
+  align-items: center;
+}
+
+.title {
+  font-family: "Custom font";
+  /* font-size: 24px; */
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.input-field {
+  position: relative;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.input-field input {
+  width: 100%;
+  padding: 10px 40px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  display: block;
+  margin: auto;
+}
+
+.sign-in-form p {
+  font-family: "Custom font";
+  font-size: 15px;
+}
+
+.btn-login {
+  width: 129px;
+  height: 42px;
+  background: #09f870;
+  border-radius: 20px;
+  border: none;
+  opacity: 100%;
+  cursor: pointer;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.btn-login:hover {
+  background-color: #07c25d;
+  color: white;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.social-text {
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  border-radius: 50%;
+  background: #eee;
+  font-size: 18px;
+  color: #333;
+  transition: 0.3s;
+  overflow: hidden;
+  position: relative;
+}
+
+.social-icon img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+/* @media (max-width: 768px) {
+  .forms-container {
+    width: 90%;
+    padding: 20px;
+  }
+} */

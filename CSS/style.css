@@ -343,10 +343,11 @@ nav a {
   align-items: center;
   padding: 10px;
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Define the drop-in animation */
-@keyframes dropIn {
+/* @keyframes dropIn {
   from {
     opacity: 0;
     transform: translateY(-50px) rotate(-4deg);
@@ -365,7 +366,7 @@ nav a {
     opacity: 1;
     transform: translateY(0) rotate(4deg);
   }
-}
+} */
 
 /* Positioning Adjustments */
 .btn-hero-socmed-1 {
@@ -396,7 +397,15 @@ nav a {
   z-index: 5;
 }
 
-.btn-hero-socmed-1:hover {
+.btn-hero-socmed-1:hover,
+.btn-hero-socmed-2:hover,
+.btn-hero-socmed-3:hover,
+.btn-hero-socmed-4:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* .btn-hero-socmed-1:hover {
   animation: dropIn 0.3s ease-in;
   animation-delay: 0.3s;
 }
@@ -404,16 +413,16 @@ nav a {
 .btn-hero-socmed-3:hover {
   animation: dropIn 0.3s ease-in;
   animation-delay: 0.3s;
-}
+} */
 
 /* .btn-hero-socmed-1,
 .btn-hero-socmed-2,
 .btn-hero-socmed-3, */
-.btn-hero-socmed-2:hover,
+/* .btn-hero-socmed-2:hover,
 .btn-hero-socmed-4:hover {
   animation: dropInTwo 0.3s ease-in;
   animation-delay: 0.3s;
-}
+} */
 
 /* .btn-hero-socmed-1:hover {
   animation: dropIn 0.8s ease-out forwards;

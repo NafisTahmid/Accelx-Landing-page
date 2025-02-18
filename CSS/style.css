@@ -896,6 +896,42 @@ section.join-us-section button {
   letter-spacing: 0%;
 }
 
+footer {
+  max-width: 100%;
+  min-height: 82px;
+  background-color: #f8f9fa;
+}
+
+footer ul {
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li {
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+}
+
+footer span {
+  font-weight: 900;
+  color: #000000;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+footer ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+}
+
 @media (max-width: 800px) {
   #sidebar-menu {
     display: flex;
@@ -1143,5 +1179,29 @@ section.join-us-section button {
 
   section.join-us-section h3 {
     font-size: 30px;
+  }
+
+  .footer-list-text {
+    width: 100% !important;
+    display: inline-block !important;
+  }
+
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer ul li {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  footer ul li a {
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
   }
 }

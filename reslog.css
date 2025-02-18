@@ -26,7 +26,7 @@ body {
   min-height: 100vh;
   /* background: linear-gradient(90deg, #c4c1c1, #78d489); */
   /* background-color: #000000; */
-  background-image: url("/Accelx-Landing-page/Images/BACKGROUND.jpg");
+  background-image: url("/Images/BACKGROUND.jpg");
 }
 .container {
   position: relative;

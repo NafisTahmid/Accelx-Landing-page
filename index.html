@@ -4,20 +4,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Findtrend</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-      <!-- Owl Carousel 2 CSS -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous">
+    <!-- Owl Carousel 2 CSS -->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
     <!-- CUSTOM (CSS) -->
-     <link rel="stylesheet" href="./CSS/style.css">
-     <!-- GOOGLE FONT (ROBOTO) -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <!-- GOOGLE FONT (ROBOTO) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
   </head>
-      <style>
+  <style>
         /* Progress Bar Styles */
         .progress-container {
             position: absolute;
@@ -36,277 +43,300 @@
         }
     </style>
   <body>
-    <!-- Custom Navbar -->
-     <div class="custom-navbar">
-      <div class="container">
-        <div class="row justify-content-around align-items-center">
+    <nav>
+     
+      <div class="">
+        <a href="" class="logo-text"><img src="./Images/logo.png" class="img-fluid" alt=""> Findtrend</a>
+      </div>
+      <input type="checkbox" id="sidebar-active">
+      <label for="sidebar-active" class="open-sidebar-button">
+        <img src="./images/svg-menu.svg" alt="">
+      </label>
+
+      <label for="sidebar-active" id="overlay"></label>
+      <div class="link-container ">
+        <label for="sidebar-active" class="close-sidebar-button">
+            <img src="./images/svg-cross.svg" alt="">
+        </label>
+
+        <a href="" class="about-text">About</a>
+        <a href="" class="">How it works</a>
+        <a href="" class="">Price</a>
+        <a href="" class="">Solution</a>
+        <a href="" class="feature-text">Features</a>
+
+        <div class="nav-buttons-two">
+          <button>Login</button>
           
-          <div class="custom-navbar-logo col-md-2">
-            <a class="fw-bold text-light text-decoration-none hide-on-mobile" href="#">
-              <img src="./Images/logo.png" alt="logo" class="img-fluid"> Findtrend
-            </a>
-          </div>
-
-          <div class="custom-navbar-points col-md-6">
-            <ul class="">
-              <li ><a href="#" class="text-center hide-on-mobile">About</a></li>
-              <li><a href="#" class="text-center hide-on-mobile">How it works</a></li>
-              <li><a href="#" class="text-center hide-on-mobile">Pricing</a></li>
-              <li><a href="#" class="text-center hide-on-mobile">Solution</a></li>
-              <li><a href="#" class="text-center hide-on-mobile">Features</a></li>
-              <li href="" id="sidebar-menu" class="ms-auto" onclick="openSidebar(event)"><img src="./Images/svg-menu.svg" alt=""></li>
-            </ul>
-          </div>
-
-          <div class="custom-navbar-buttons col-md-4 pb-2 ms-auto">
-            <button class="hide-on-mobile"><a href="./login.html" class="text-decoration-none">Log in</a></button>
-            <button class="hide-on-mobile"><a href="./register.html" class="text-decoration-none">Register</a></button>
-          </div>
+          <button>Register</button>
         </div>
       </div>
-    </div>
-   
-    <nav>
-      <ul class="sidebar">
-        <li href="" onclick=closeSidebar()><img src="./Images/svg-cross.svg" class="img-fluid d-block ps-3 pt-3" alt=""></li>
-        <li ><a href="#" class="text-center">About</a></li>
-        <li><a href="#" class="text-center">How it works</a></li>
-        <li><a href="#" class="text-center">Pricing</a></li>
-        <li><a href="#" class="text-center">Solution</a></li>
-        <li><a href="#" class="text-center">Features</a></li>
-        <li><button class="hide-on-mobile mx-auto d-block"><a href="./login.html" class="text-decoration-none">Log in</a></button></li>
-        <li><button class="hide-on-mobile mx-auto d-block"><a href="./register.html" class="text-decoration-none">Register</a></button></li>
-      </ul>
+      <div class="nav-buttons">
+        <button>Log in</button>
+        <button>Register</button>
+      </div>
     </nav>
    
+
     <!-- Hero section -->
-     <div class="hero-ancestor-section">
-  
-     <section class="hero-section">
-        
+    <div class="hero-ancestor-section">
+
+      <section class="hero-section">
+
         <div class="container">
-            <div class="hero-content-wrapper">
-              <div class="row">
-                <div class="col-md-12 col-sm-12">
-                    <div class="justify-content-center align-items-center">
-                      <h1 class="text-center mx-auto d-block">Minimize your tabs.</h1>
-                      <h1 class="text-center mx-auto d-block">Find the trends!</h1>
-                      <p class="text-center py-3">Don't let your computer memories consumes all of those browser tabs. Find trend let you gathers all o your favorite website into one place.</p>
-                      <div class=" hero-content-wrapper-button-section d-flex justify-content-cente align-items-center">
-                        <button class="mx-auto d-block my-5">Get Started🔥</button>
-                        <img src="./Images/img-hero.png" class="img-fluid" alt="">
-                      </div>
-                  </div>
-                  </div>
-              </div>
-            </div>
-            <div class="btn-hero-socmed row justify-content-center align-items-center my-5 ms-5 d-block">
-                <div class="btn-hero-socmed-1 col-md- col-sm-12">
-                  <div class="d-flex justify-content-center align-items-center">
-                    <img src="./Images/image 96.png"  class="img-fluid d-block  mb-3" alt="twitter logo">
-                    <p class="text-center py-4 ms-1">Cryptopunk - Search &#10006;</p>
-                  </div>
-                </div>
-                <div class="btn-hero-socmed-2 col-md-3 col-sm-12">
-                  <div class="d-flex justify-content-center align-items-center">
-                    <img src="./Images/image 96.svg" class="img-fluid d-block  mb-3" alt="">
-                    <p class="text-center py-4 ms-1">Popular Design - Search &#10006;</p>
-                  </div>
-                </div>
-                <div class="btn-hero-socmed-3 col-md-3 col-sm-12">
-                  <div class="d-flex justify-content-center align-items-center">
-                      <img src="./Images/image 95.svg"  class="img-fluid d-block  mb-3" alt="facebook image">
-                      <p class="text-center py-4 ms-1">Product Design - Search &#10006;</p>
-                  </div>
-                </div>
-                <div class="btn-hero-socmed-4 col-md- col-sm-12">
-                  <div class="d-flex justify-content-center align-items-center">
-                      <img src="./Images/Rectangle 6.svg" class="img-fluid d-block  mb-3" alt="basketball">
-                      <p class="text-center py-4 ms-1">Elon Musk - Search &#10006;</p>
-                  </div>
-                </div>
-            </div>
-         
-        </div>
-     </section>
-    </div>
-
-     <!-- Open new tab section -->
-      <section class="open-new-tab-section">
-          <div class="container">
-            <h2 class="text-center">Open new tabs is sh*t</h2>
+          <div class="hero-content-wrapper">
             <div class="row">
-              <div class="col-md-12 justify-content-center align-items-center">
-                <div class="group-15">
-                  <div class="white-background">
-                    <div class="black-background">
-                      <div class="black-background-text-section d-flex justify-content-center align-items-center">
-                        <img src="./Images/Group 16.svg" class="img-fluid" alt="">
-                        <p>Findtrend - Elon Musk</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="open-new-tab-section-footer-text-section">
-                    <p>A solution for your browser and don't make your device get slower over time. Get ease and faster to discover a trend with just one tab.</p>
+              <div class="col-md-12 col-sm-12">
+                <div class="justify-content-center align-items-center">
+                  <h1 class="text-center mx-auto d-block">Minimize your
+                    tabs.</h1>
+                  <h1 class="text-center mx-auto d-block">Find the trends!</h1>
+                  <p class="text-center py-3">Don't let your computer memories
+                    consumes all of those browser tabs. Find trend let you
+                    gathers all o your favorite website into one place.</p>
+                  <div
+                    class=" hero-content-wrapper-button-section d-flex justify-content-cente align-items-center">
+                    <button class="mx-auto d-block my-5">Get Started🔥</button>
+                    <img src="./Images/img-hero.png" class="img-fluid" alt>
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class="group-text-one">
-                <img src="./Images/Arrow 03.png" alt="" class="arrow img-fluid">
-                <p>solution for discover a trend</p>
-            </div>
-            <div class="group-text-two">
-              <p>You just need one tab now</p>
-              <img src="./Images/Arrow 4.png" class="arrow-two img-fluid" alt="">
             </div>
           </div>
+          <div
+            class="btn-hero-socmed row justify-content-center align-items-center my-5 ms-5 d-block">
+            <div class="btn-hero-socmed-1 col-md- col-sm-12">
+              <div class="d-flex justify-content-center align-items-center">
+                <img src="./Images/image 96.png" class="img-fluid d-block  mb-3"
+                  alt="twitter logo">
+                <p class="text-center py-4 ms-1">Cryptopunk - Search
+                  &#10006;</p>
+              </div>
+            </div>
+            <div class="btn-hero-socmed-2 col-md-3 col-sm-12">
+              <div class="d-flex justify-content-center align-items-center">
+                <img src="./Images/image 96.svg" class="img-fluid d-block  mb-3"
+                  alt>
+                <p class="text-center py-4 ms-1">Popular Design - Search
+                  &#10006;</p>
+              </div>
+            </div>
+            <div class="btn-hero-socmed-3 col-md-3 col-sm-12">
+              <div class="d-flex justify-content-center align-items-center">
+                <img src="./Images/image 95.svg" class="img-fluid d-block  mb-3"
+                  alt="facebook image">
+                <p class="text-center py-4 ms-1">Product Design - Search
+                  &#10006;</p>
+              </div>
+            </div>
+            <div class="btn-hero-socmed-4 col-md- col-sm-12">
+              <div class="d-flex justify-content-center align-items-center">
+                <img src="./Images/Rectangle 6.svg"
+                  class="img-fluid d-block  mb-3" alt="basketball">
+                <p class="text-center py-4 ms-1">Elon Musk - Search &#10006;</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </section>
+    </div>
+
+    <!-- Open new tab section -->
+    <section class="open-new-tab-section">
+      <div class="container">
+        <h2 class="text-center">Open new tabs is sh*t</h2>
+        <div class="row">
+          <div class="col-md-12 justify-content-center align-items-center">
+            <div class="group-15">
+              <div class="white-background">
+                <div class="black-background">
+                  <div
+                    class="black-background-text-section d-flex justify-content-center align-items-center">
+                    <img src="./Images/Group 16.svg" class="img-fluid" alt>
+                    <p>Findtrend - Elon Musk</p>
+                  </div>
+                </div>
+              </div>
+              <div class="open-new-tab-section-footer-text-section">
+                <p>A solution for your browser and don't make your device get
+                  slower over time. Get ease and faster to discover a trend with
+                  just one tab.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="group-text-one">
+          <img src="./Images/Arrow 03.png" alt class="arrow img-fluid">
+          <p>solution for discover a trend</p>
+        </div>
+        <div class="group-text-two">
+          <p>You just need one tab now</p>
+          <img src="./Images/Arrow 4.png" class="arrow-two img-fluid" alt>
+        </div>
+      </div>
+    </section>
 
     <!-- Longtext section -->
-     <section class="longtext-section">
-        <div class="container">
-          <div class="row longtext-section-row">
-            <div class="col-md-12 justify-content-center align-items-center">
-             <h6>Findtrend helps you to increase your
+    <section class="longtext-section">
+      <div class="container">
+        <div class="row longtext-section-row">
+          <div class="col-md-12 justify-content-center align-items-center">
+            <h6>Findtrend helps you to increase your
               productivity and reduce your computer's
               memory load, <span>an application that can
                 fulfill your daily browsing needs.</span></h6>
-            </div>
           </div>
-         
         </div>
-     </section>
 
-   <!-- Partner section -->
+      </div>
+    </section>
+
+    <!-- Partner section -->
     <section class="partner-section ">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h2 class="text-center">Findtrend make +1000 Startup grow</h2>
-            </div>
-          </div>
-          <div class="row partner-image-section">
-
-            <div class="col-md-3 col-sm-6 col-lg-3">
-              <div class="partner-image-section-box">
-                <img src="./Images/image 116.png" class="img-fluid mx-auto d-block p-5"  alt="">
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-lg-3">
-              <div class="partner-image-section-box">
-                <img src="./Images/image 128.png" class="img-fluid mx-auto d-block p-5" alt="">
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-lg-3">
-              <div class="partner-image-section-box">
-                <img src="./Images/image 121.png" class="img-fluid mx-auto d-block p-5"  alt="">
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-lg-3">
-              <div class="partner-image-section-box">
-                <img src="./Images/image 119.png" class="img-fluid mx-auto d-block p-5"  alt="">
-              </div>
-            </div>   
-
-          </div>
-
-          <div class="row partner-image-section">
-
-            <div class="col-md-3 col-sm-6 col-lg-3">
-              <div class="partner-image-section-box">
-                <img src="./Images/image 125.png" class="img-fluid mx-auto d-block p-5"  alt="">
-              </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 col-lg-3">
-              <div class="partner-image-section-box">
-                <img src="./Images/image 122.png" class="img-fluid mx-auto d-block p-5" alt="">
-              </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 col-lg-3">
-              <div class="partner-image-section-box">
-                <img src="./Images/image 133.png" class="img-fluid mx-auto d-block p-5"  alt="">
-              </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 col-lg-3">
-              <div class="partner-image-section-box">
-                <img src="./Images/image 129.png" class="img-fluid mx-auto d-block p-5"  alt="">
-              </div>
-            </div>
-            
-          </div>
-
-          <div class="row partner-image-section">
-
-            <div class="col-md-3 col-sm-6 col-lg-3">
-              <div class="partner-image-section-box">
-                <img src="./Images/image 117.png" class="img-fluid mx-auto d-block p-5"  alt="">
-              </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 col-lg-3">
-              <div class="partner-image-section-box">
-                <img src="./Images/image 126.png" class="img-fluid mx-auto d-block p-5" alt="">
-              </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 col-lg-3">
-              <div class="partner-image-section-box">
-                <img src="./Images/image 120.png" class="img-fluid mx-auto d-block p-5"  alt="">
-              </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 col-lg-3">
-              <div class="partner-image-section-box">
-                <img src="./Images/image 124.png" class="img-fluid mx-auto d-block p-5"  alt="">
-              </div>
-            </div>
-            
-          </div>
-
-          <div class="row partner-image-section">
-
-            <div class="col-md-3 col-sm-6 col-lg-3">
-              <div class="partner-image-section-box">
-                <img src="./Images/image 132.png" class="img-fluid mx-auto d-block p-5"  alt="">
-              </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 col-lg-3">
-              <div class="partner-image-section-box">
-                <img src="./Images/image 127.png" class="img-fluid mx-auto d-block p-5" alt="">
-              </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 col-lg-3">
-              <div class="partner-image-section-box">
-                <img src="./Images/image 118.png" class="img-fluid mx-auto d-block p-5"  alt="">
-              </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 col-lg-3">
-              <div class="partner-image-section-box">
-                <img src="./Images/image 130.png" class="img-fluid mx-auto d-block p-5"  alt="">
-              </div>
-            </div>
-            
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="text-center">Findtrend make +1000 Startup grow</h2>
           </div>
         </div>
+        <div class="row partner-image-section">
+
+          <div class="col-md-3 col-sm-6 col-lg-3">
+            <div class="partner-image-section-box">
+              <img src="./Images/image 116.png"
+                class="img-fluid mx-auto d-block p-5" alt>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-lg-3">
+            <div class="partner-image-section-box">
+              <img src="./Images/image 128.png"
+                class="img-fluid mx-auto d-block p-5" alt>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-lg-3">
+            <div class="partner-image-section-box">
+              <img src="./Images/image 121.png"
+                class="img-fluid mx-auto d-block p-5" alt>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-lg-3">
+            <div class="partner-image-section-box">
+              <img src="./Images/image 119.png"
+                class="img-fluid mx-auto d-block p-5" alt>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row partner-image-section">
+
+          <div class="col-md-3 col-sm-6 col-lg-3">
+            <div class="partner-image-section-box">
+              <img src="./Images/image 125.png"
+                class="img-fluid mx-auto d-block p-5" alt>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-lg-3">
+            <div class="partner-image-section-box">
+              <img src="./Images/image 122.png"
+                class="img-fluid mx-auto d-block p-5" alt>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-lg-3">
+            <div class="partner-image-section-box">
+              <img src="./Images/image 133.png"
+                class="img-fluid mx-auto d-block p-5" alt>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-lg-3">
+            <div class="partner-image-section-box">
+              <img src="./Images/image 129.png"
+                class="img-fluid mx-auto d-block p-5" alt>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row partner-image-section">
+
+          <div class="col-md-3 col-sm-6 col-lg-3">
+            <div class="partner-image-section-box">
+              <img src="./Images/image 117.png"
+                class="img-fluid mx-auto d-block p-5" alt>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-lg-3">
+            <div class="partner-image-section-box">
+              <img src="./Images/image 126.png"
+                class="img-fluid mx-auto d-block p-5" alt>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-lg-3">
+            <div class="partner-image-section-box">
+              <img src="./Images/image 120.png"
+                class="img-fluid mx-auto d-block p-5" alt>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-lg-3">
+            <div class="partner-image-section-box">
+              <img src="./Images/image 124.png"
+                class="img-fluid mx-auto d-block p-5" alt>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row partner-image-section">
+
+          <div class="col-md-3 col-sm-6 col-lg-3">
+            <div class="partner-image-section-box">
+              <img src="./Images/image 132.png"
+                class="img-fluid mx-auto d-block p-5" alt>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-lg-3">
+            <div class="partner-image-section-box">
+              <img src="./Images/image 127.png"
+                class="img-fluid mx-auto d-block p-5" alt>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-lg-3">
+            <div class="partner-image-section-box">
+              <img src="./Images/image 118.png"
+                class="img-fluid mx-auto d-block p-5" alt>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-lg-3">
+            <div class="partner-image-section-box">
+              <img src="./Images/image 130.png"
+                class="img-fluid mx-auto d-block p-5" alt>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </section>
 
     <!-- Find trend section -->
     <section class="find-trend-section py-5">
       <div class="container">
-          <div class="row">
-              <div class="col-md-12">
-                <h2 class="text-center">All platform connect to Findtrend</h2>
-              </div>
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="text-center">All platform connect to Findtrend</h2>
           </div>
-          <!-- <div class="row justify-content-center align-items-center">
+        </div>
+        <!-- <div class="row justify-content-center align-items-center">
             <div class="col-md-2 justify-content-center align-items-center">
               <div class="find-trend-section-box my-2">
                 <img src="./Images/findtrend-facebook.png" class="mx-auto d-block img-fluid" alt="">
@@ -348,170 +378,214 @@
               </div>
             </div>
           </div> -->
-          <div class="owl-carousel owl-theme">
-            <div class="find-trend-section-box my-2">
-              <img src="./Images/findtrend-facebook.png" class="mx-auto d-block img-fluid" alt="">
+        <div class="owl-carousel owl-theme">
+          <div class="find-trend-section-box my-2">
+            <img src="./Images/findtrend-facebook.png"
+              class="mx-auto d-block img-fluid" alt>
+          </div>
+          <div class="find-trend-section-box my-2">
+            <img src="./Images/findtrend-twitter.png"
+              class="mx-auto d-block img-fluid" alt>
+          </div>
+          <div class="find-trend-section-box my-2">
+            <img src="./Images/findtrend-basketball.png"
+              class="mx-auto d-block img-fluid" alt>
+          </div>
+          <div class="find-trend-section-box my-2">
+            <img src="./Images/findtrend-pinterest.png"
+              class="mx-auto d-block img-fluid" alt>
+          </div>
+          <div class="find-trend-section-box my-2">
+            <img src="./Images/findtrend-M.png"
+              class="mx-auto d-block img-fluid" alt>
+          </div>
+          <div class="find-trend-section-box my-2">
+            <img src="./Images/findtrend-reddit.png"
+              class="mx-auto d-block img-fluid" alt>
+          </div>
+          <div class="find-trend-section-box my-2">
+            <img src="./Images/findtrend-vk.png"
+              class="mx-auto d-block img-fluid" alt>
+          </div>
+          <div class="find-trend-section-box my-2">
+            <img src="./Images/findtrend-linkedin.png"
+              class="mx-auto d-block img-fluid" alt>
+          </div>
+        </div>
+
+        <div class="tweet-section">
+          <div class="row">
+            <div class="col-md-12">
+              <img src="./Images/tweet 1.png"
+                class="img-fluid mx-auto d-block py-4" alt="tweet 1">
             </div>
-            <div class="find-trend-section-box my-2">
-              <img src="./Images/findtrend-twitter.png" class="mx-auto d-block img-fluid" alt="">
+            <div class="col-md-12">
+              <img src="./Images/tweet 2.png"
+                class="img-fluid mx-auto d-block py-4" alt="tweet 2">
             </div>
-            <div class="find-trend-section-box my-2">
-              <img src="./Images/findtrend-basketball.png" class="mx-auto d-block img-fluid" alt="">
-            </div>
-            <div class="find-trend-section-box my-2">
-              <img src="./Images/findtrend-pinterest.png" class="mx-auto d-block img-fluid" alt="">
-            </div>
-            <div class="find-trend-section-box my-2">
-              <img src="./Images/findtrend-M.png" class="mx-auto d-block img-fluid" alt="">
-            </div>
-            <div class="find-trend-section-box my-2">
-              <img src="./Images/findtrend-reddit.png" class="mx-auto d-block img-fluid" alt="">
-            </div>
-            <div class="find-trend-section-box my-2">
-              <img src="./Images/findtrend-vk.png" class="mx-auto d-block img-fluid" alt="">
-            </div>
-            <div class="find-trend-section-box my-2">
-              <img src="./Images/findtrend-linkedin.png" class="mx-auto d-block img-fluid" alt="">
+            <div class="col-md-12">
+              <img src="./Images/tweet 3.png"
+                class="img-fluid mx-auto d-block py-4" alt="tweet 3">
             </div>
           </div>
+        </div>
 
-          <div class="tweet-section">
-            <div class="row">
-              <div class="col-md-12">
-                <img src="./Images/tweet 1.png" class="img-fluid mx-auto d-block py-4" alt="tweet 1">
-              </div>
-              <div class="col-md-12">
-                <img src="./Images/tweet 2.png" class="img-fluid mx-auto d-block py-4" alt="tweet 2">
-              </div>
-              <div class="col-md-12">
-                <img src="./Images/tweet 3.png" class="img-fluid mx-auto d-block py-4" alt="tweet 3">
-              </div>
-            </div>
-          </div>
-
-           <button class="mx-auto d-block view-trend-button py-2 px-3">View More Trend</button>
+        <button class="mx-auto d-block view-trend-button py-2 px-3">View More
+          Trend</button>
       </div>
     </section>
 
     <!-- Get best deal section -->
-     <section class="best-deal-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h2 class="best-deal-header-text text-center">Get your best deal</h2>
-              <div class="toggle-button-section d-flex justify-content-center align-items-center py-3">
-                <p class="text-center deal-sub-text deal-sub-text-1 pt-3">Monthly</p>
-                <div class="toggle-button">
-                  <div class="toggle-button-recursive" onclick="toggleButton()" id="button-one"></div>
-                  <div class="toggle-button-recursive-two" id="button-two" onclick="toggleButtonTwo()"></div>
-                </div>
-                <p class="text-center deal-sub-text deal-sub-text-2 pt-3">Yearly</p>
-                <div class="last-arrow-section">
-                  <small id="small-text">Save 10% per month</small>
-                  
-                </div>
+    <section class="best-deal-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="best-deal-header-text text-center">Get your best
+              deal</h2>
+            <div
+              class="toggle-button-section d-flex justify-content-center align-items-center py-3">
+              <p
+                class="text-center deal-sub-text deal-sub-text-1 pt-3">Monthly</p>
+              <div class="toggle-button">
+                <div class="toggle-button-recursive" onclick="toggleButton()"
+                  id="button-one"></div>
+                <div class="toggle-button-recursive-two" id="button-two"
+                  onclick="toggleButtonTwo()"></div>
               </div>
-            </div>
-            <div class="row justify-content-center align-items-center py-5 payment-box-div">
-              <div class="col-md-4 payment-box mx-3">
-                <h6 class="payment-box-heading pt-5 ps-2">Personal</h6>
-                <p class="payment-box-sub-text ps-2">Special first packet for all</p>
-                <hr class="py-2"/>
-                <h6 class="price-text pt-3 ps-2">$<span id="personal-price">8</span> <small class="price-small">/Month</small></h6>
-                <ul class="py-3">
-                  <li class="py-4">Up to 5 pages each group</li>
-                  <li class="py-4">Up to 10 groups page</li>
-                  <li class="py-4">5 Days group page saved</li>
-                </ul>
-                <button class="payment-box-button mx-auto d-block">Start Free Trial</button>
-              </div>
-              
-              <div class="col-md-4 payment-box mx-3">
-                <h6 class="payment-box-heading pt-5 ps-2">Regular</h6>
-                <p class="payment-box-sub-text ps-2">Recommended for personal pro</p>
-                <hr class="py-2"/>
-                <h6 class="price-text pt-3 ps-2">$ <span id="regular-price">20</span> <small class="price-small">/Month</small></h6>
-                <ul class="py-3">
-                  <li class="py-4">Up to 15 pages each group</li>
-                  <li class="py-4">Download page up to 20 pages</li>
-                  <li class="py-4">Up to 10 groups page</li>
-                  <li class="py-4">15 Days group page saved</li>
-                </ul>
-                <button class="payment-box-button mx-auto d-block">Start Free Trial</button>
-              </div>
+              <p
+                class="text-center deal-sub-text deal-sub-text-2 pt-3">Yearly</p>
+              <div class="last-arrow-section">
+                <small id="small-text">Save 10% per month</small>
 
-              <div class="col-md-4 payment-box mx-3">
-                <h6 class="payment-box-heading pt-5 ps-2">Premium</h6>
-                <p class="payment-box-sub-text ps-2">Packet for Startup & Company</p>
-                <hr class="py-2"/>
-                <h6 class="price-text pt-3 ps-2">$<span id="premium-price">48</span> <small class="price-small">/Month</small></h6>
-                <ul class="py-3">
-                  <li class="py-4">Unlimited group pages</li>
-                  <li class="py-4">Unlimited download page</li>
-                  <li class="py-4">Unlimited page each group</li>
-                  <li class="py-4">Customized sorting group pages</li>
-                  <li class="py-4">30 days group page saved</li>
-                </ul>
-                <button class="payment-box-button mx-auto d-block">Start Free Trial</button>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-     </section>
-    
-     <!-- Join us section -->
-      <section class="join-us-section">
-          <div class="container">
-            <div class="row justify-content-center align-items-center ">
-              <div class="join-us-texts">
-                <h3 class="join-us-heading">Join us on email for</h3>
-                <h3><span>more trending topics</span></h3>
-                <button class="mx-auto d-block my-5">Join Now</button>
               </div>
             </div>
           </div>
-      </section>
-
-      <!-- Footer section -->
-      <footer class="bg-light py-4">
-        <div class="container">
-          <div class="row align-items-center">
-            <!-- Logo Section -->
-            <div class="col-md-4 text-md-start text-center mb-3 mb-md-0">
-              <a href="#" class="text-decoration-none d-flex align-items-center justify-content-md-start justify-content-center">
-                <img src="./Images/Footer logo.png" class="img-fluid" alt="Footer logo" style="height: 40px;">
-                <span class="ps-2 fw-bold text-dark">Findtrend</span>
-              </a>
-            </div>
-      
-            <!-- Navigation Links -->
-            <div class="col-md-8">
-              <ul class="d-flex justify-content-end align-items-center">
-                <li class="">
-                  <a class=" text-center py-5" aria-current="page" href="#">Privacy Policy</a>
-                </li>
-                <li class="">
-                  <a class=" text-center py-5" href="#">Terms and conditions</a>
-                </li>
-                <li class="">
-                  <a class=" text-center py-5" href="#">Contact us</a>
-                </li>
-                <li class="">
-                  <a class=" text-center py-5" aria-disabled="true">Careers</a>
-                </li>
+          <div
+            class="row justify-content-center align-items-center py-5 payment-box-div">
+            <div class="col-md-4 payment-box mx-3">
+              <h6 class="payment-box-heading pt-5 ps-2">Personal</h6>
+              <p class="payment-box-sub-text ps-2">Special first packet for
+                all</p>
+              <hr class="py-2" />
+              <h6 class="price-text pt-3 ps-2">$<span
+                  id="personal-price">8</span> <small
+                  class="price-small">/Month</small></h6>
+              <ul class="py-3">
+                <li class="py-4">Up to 5 pages each group</li>
+                <li class="py-4">Up to 10 groups page</li>
+                <li class="py-4">5 Days group page saved</li>
               </ul>
+              <button class="payment-box-button mx-auto d-block">Start Free
+                Trial</button>
             </div>
+
+            <div class="col-md-4 payment-box mx-3">
+              <h6 class="payment-box-heading pt-5 ps-2">Regular</h6>
+              <p class="payment-box-sub-text ps-2">Recommended for personal
+                pro</p>
+              <hr class="py-2" />
+              <h6 class="price-text pt-3 ps-2">$ <span
+                  id="regular-price">20</span> <small
+                  class="price-small">/Month</small></h6>
+              <ul class="py-3">
+                <li class="py-4">Up to 15 pages each group</li>
+                <li class="py-4">Download page up to 20 pages</li>
+                <li class="py-4">Up to 10 groups page</li>
+                <li class="py-4">15 Days group page saved</li>
+              </ul>
+              <button class="payment-box-button mx-auto d-block">Start Free
+                Trial</button>
+            </div>
+
+            <div class="col-md-4 payment-box mx-3">
+              <h6 class="payment-box-heading pt-5 ps-2">Premium</h6>
+              <p class="payment-box-sub-text ps-2">Packet for Startup &
+                Company</p>
+              <hr class="py-2" />
+              <h6 class="price-text pt-3 ps-2">$<span
+                  id="premium-price">48</span> <small
+                  class="price-small">/Month</small></h6>
+              <ul class="py-3">
+                <li class="py-4">Unlimited group pages</li>
+                <li class="py-4">Unlimited download page</li>
+                <li class="py-4">Unlimited page each group</li>
+                <li class="py-4">Customized sorting group pages</li>
+                <li class="py-4">30 days group page saved</li>
+              </ul>
+              <button class="payment-box-button mx-auto d-block">Start Free
+                Trial</button>
+            </div>
+
           </div>
         </div>
-      </footer>
-      
-      <!-- JQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      </div>
+    </section>
+
+    <!-- Join us section -->
+    <section class="join-us-section">
+      <div class="container">
+        <div class="row justify-content-center align-items-center ">
+          <div class="join-us-texts">
+            <h3 class="join-us-heading">Join us on email for</h3>
+            <h3><span>more trending topics</span></h3>
+            <button class="mx-auto d-block my-5">Join Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer class="bg-light py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Logo Section -->
+          <div class="col-md-4 text-md-start text-center mb-3 mb-md-0">
+            <a href="#"
+              class="text-decoration-none d-flex align-items-center justify-content-md-start justify-content-center">
+              <img src="./Images/Footer logo.png" class="img-fluid"
+                alt="Footer logo" style="height: 40px;">
+              <span class="ps-2 fw-bold text-dark">Findtrend</span>
+            </a>
+          </div>
+
+          <!-- Navigation Links -->
+          <div class="col-md-8">
+            <ul class="d-flex justify-content-end align-items-center">
+              <li class>
+                <a class=" text-center py-5" aria-current="page"
+                  href="#">Privacy Policy</a>
+              </li>
+              <li class>
+                <a class=" text-center py-5" href="#">Terms and conditions</a>
+              </li>
+              <li class>
+                <a class=" text-center py-5" href="#">Contact us</a>
+              </li>
+              <li class>
+                <a class=" text-center py-5" aria-disabled="true">Careers</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JQuery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Bootstrap (js) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
     <!-- Owl carousel min js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./reslog.js"></script>
     <!-- JavaScript for Scroll Progress -->
     <script>
       function updateProgressBar() {
@@ -550,16 +624,19 @@
         });
       });
 
-      function openSidebar() {
-        const menubar = document.querySelector(".sidebar");
-        menubar.style.display = "flex";
-        e.preventDefault();
+      function openSidebar(event) {
+        event.preventDefault();
+        document.querySelector(".sidebar").classList.add("active");
       }
 
       function closeSidebar() {
-        const menubar = document.querySelector(".sidebar");
-        menubar.style.display = "none";
+        document.querySelector(".sidebar").classList.remove("active");
       }
+
+      // Mobile menu toggle
+    document.getElementById("sidebar-menu").addEventListener("click", function() {
+      document.querySelector(".custom-navbar-points ul").classList.toggle("active");
+    });
 
       function toggleButton() {
         const buttonOne = document.getElementById("button-one");

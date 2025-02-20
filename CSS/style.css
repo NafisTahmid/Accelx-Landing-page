@@ -806,6 +806,14 @@ footer ul li a {
   color: #000000;
 }
 
+@media screen and (max-width: 1200px) {
+  .hero-content-wrapper-button-section img {
+    position: absolute;
+    right: 25%;
+    bottom: 15%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .hero-content-wrapper-button-section img {
     position: absolute;
